@@ -6,7 +6,7 @@ const { Footer } = Layout;
 const AppFooter = () => {
   return (
     <Footer style={{ textAlign: 'center' }}>
-      NFT Marketplace ©2023 Created by John Doe
+      NFT Marketplace ©2023 Created by Logres
     </Footer>
   );
 };

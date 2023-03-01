@@ -1,21 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import { Layout, Menu } from 'antd';
+import { Link } from 'react-router-dom';
+import UserAvatar from './UserAvatar';
+import LoginButton from './LoginButton';
 
 const { Header } = Layout;
 
-const AppHeader = () => {
+const AppHeader = ({ isLoggedIn, userInfo, handleLogin, handleLogout }) => {
   return (
-    <Header>
+    <Header style={{ display: 'flex' }}>
       <div className="logo" />
-      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
-        <Menu.Item key="1">
-          <Link to="/">Home</Link>
-        </Menu.Item>
-        <Menu.Item key="2">
-          <Link to="/my-nfts">My NFTs</Link>
-        </Menu.Item>
-      </Menu>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']} style={{ borderBottom: 'none' }}>
+          <Menu.Item key="1">
+            <Link to="/">Home</Link>
+          </Menu.Item>
+          <Menu.Item key="2">
+            <Link to="/my-nfts">My NFTs</Link>
+          </Menu.Item>
+          <Menu.Item key="3">
+            <Link to="/create-nft">Create NFT</Link>
+          </Menu.Item>
+          <Menu.Item key="4">
+            <Link to="/market">Marketplace</Link>
+          </Menu.Item>
+        </Menu>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          {isLoggedIn && userInfo ? (
+            <UserAvatar avatar={userInfo.avatar} address={userInfo.address} onLogOut={handleLogout} />
+          ) : (
+            <LoginButton onLogin={handleLogin} />
+          )}
+        </div>
+      </div>
     </Header>
   );
 };

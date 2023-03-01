@@ -1,26 +1,48 @@
 import React from 'react';
+import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import store from './store';
 import Home from './pages/Home';
-import NftDetails from './pages/NftDetails';
-import UserDashboard from './pages/UserDashboard';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MyNfts from './pages/MyNfts';
+import CreateNftPage from './pages/CreateNftPage';
+import MarketPage from './pages/MarketPage';
 
 function App() {
+
+
+  // Header Related
+  const [userInfo, setUserinfo] = useState({address: "0x", avatar: ""});
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (values) => {
+    setUserinfo({
+      address: values.address,
+      avatar: 'https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png',
+    });
+    setIsLoggedIn(true);
+  }
+
+  const handleLogout = () => {
+    setUserinfo(null);
+    setIsLoggedIn(false);
+  }
+
+  // MyNfts Related
+
+
   return (
-    <Provider store={store}>
       <Router>
-        <Header />
+        <Header isLoggedIn={isLoggedIn}  userInfo={userInfo} handleLogin = {handleLogin} handleLogout={handleLogout}/>
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route exact path="/nft/:id" element={<NftDetails/>} />
-          <Route exact path="/user/dashboard" element={<UserDashboard/>} />
+          <Route exact path="/my-nfts" element={<MyNfts isLoggedIn={isLoggedIn}  address={userInfo.address}/>} />
+          <Route exact path="/create-nft" element={<CreateNftPage/>} />
+          <Route exact path="/market" element={<MarketPage />} />
         </Routes>
         <Footer />
       </Router>
-    </Provider>
   );
 }
 

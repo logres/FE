@@ -1,11 +1,18 @@
-import { Layout, Menu } from 'antd';
+import { Layout, Menu, Button, Modal } from 'antd';
 import { Link } from 'react-router-dom';
 import UserAvatar from './UserAvatar';
-import LoginButton from './LoginButton';
+import LoginForm from './LoginForm';
+import {useState} from 'react';
 
 const { Header } = Layout;
 
-const AppHeader = ({ isLoggedIn, userInfo, handleLogin, handleLogout }) => {
+const AppHeader = ({ isLoggedIn, userInfo, handleLogin, handleLogout, handleRegister }) => {
+  const [visible, setVisible] = useState(false);
+
+  const handleCancel = () => {
+    setVisible(false);
+  };
+
   return (
     <Header style={{ display: 'flex' }}>
       <div className="logo" />
@@ -28,7 +35,14 @@ const AppHeader = ({ isLoggedIn, userInfo, handleLogin, handleLogout }) => {
           {isLoggedIn && userInfo ? (
             <UserAvatar avatar={userInfo.avatar} address={userInfo.address} onLogOut={handleLogout} />
           ) : (
-            <LoginButton onLogin={handleLogin} />
+            <div>
+              <Button type="primary" onClick={() => setVisible(true)}>
+                Log in
+              </Button>
+              <Modal visible={visible} onCancel={handleCancel} footer={null}>
+                <LoginForm onLogin={handleLogin} onRegister={handleRegister} />
+              </Modal>
+            </div>
           )}
         </div>
       </div>

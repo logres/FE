@@ -1,0 +1,30 @@
+"filename", "language", "CSS", "JavaScript JSX", "JavaScript", "XML", "comment", "blank", "total"
+"c:\Users\logre\Desktop\FE\src\App.css", "CSS", 33, 0, 0, 0, 0, 6, 39
+"c:\Users\logre\Desktop\FE\src\App.js", "JavaScript", 0, 0, 62, 0, 4, 17, 83
+"c:\Users\logre\Desktop\FE\src\App.test.js", "JavaScript", 0, 0, 7, 0, 0, 2, 9
+"c:\Users\logre\Desktop\FE\src\ContractInteraction.jsx", "JavaScript JSX", 0, 69, 0, 0, 10, 14, 93
+"c:\Users\logre\Desktop\FE\src\api\api.js", "JavaScript", 0, 0, 22, 0, 0, 3, 25
+"c:\Users\logre\Desktop\FE\src\components\AvatarName.jsx", "JavaScript JSX", 0, 16, 0, 0, 0, 4, 20
+"c:\Users\logre\Desktop\FE\src\components\BackGroud.jsx", "JavaScript JSX", 0, 26, 0, 0, 0, 5, 31
+"c:\Users\logre\Desktop\FE\src\components\CenteredAreaWithEightCards.jsx", "JavaScript JSX", 0, 24, 0, 0, 0, 4, 28
+"c:\Users\logre\Desktop\FE\src\components\Footer.jsx", "JavaScript JSX", 0, 11, 0, 0, 0, 4, 15
+"c:\Users\logre\Desktop\FE\src\components\Header.jsx", "JavaScript JSX", 0, 36, 0, 0, 0, 4, 40
+"c:\Users\logre\Desktop\FE\src\components\LoginButton.jsx", "JavaScript JSX", 0, 55, 0, 0, 1, 8, 64
+"c:\Users\logre\Desktop\FE\src\components\MainComponent.jsx", "JavaScript JSX", 0, 18, 0, 0, 0, 6, 24
+"c:\Users\logre\Desktop\FE\src\components\Panel.jsx", "JavaScript JSX", 0, 117, 0, 0, 0, 8, 125
+"c:\Users\logre\Desktop\FE\src\components\Tabs.jsx", "JavaScript JSX", 0, 38, 0, 0, 0, 3, 41
+"c:\Users\logre\Desktop\FE\src\components\UserAvatar.jsx", "JavaScript JSX", 0, 20, 0, 0, 0, 4, 24
+"c:\Users\logre\Desktop\FE\src\index.css", "CSS", 12, 0, 0, 0, 0, 2, 14
+"c:\Users\logre\Desktop\FE\src\index.js", "JavaScript", 0, 0, 12, 0, 3, 3, 18
+"c:\Users\logre\Desktop\FE\src\logo.svg", "XML", 0, 0, 0, 1, 0, 0, 1
+"c:\Users\logre\Desktop\FE\src\pages\CreateNftPage.jsx", "JavaScript JSX", 0, 34, 0, 0, 37, 4, 75
+"c:\Users\logre\Desktop\FE\src\pages\Home.jsx", "JavaScript JSX", 0, 18, 0, 0, 0, 2, 20
+"c:\Users\logre\Desktop\FE\src\pages\MarketPage.jsx", "JavaScript JSX", 0, 82, 0, 0, 0, 4, 86
+"c:\Users\logre\Desktop\FE\src\pages\MyNfts.jsx", "JavaScript JSX", 0, 74, 0, 0, 4, 12, 90
+"c:\Users\logre\Desktop\FE\src\pages\NftDetails.jsx", "JavaScript JSX", 0, 35, 0, 0, 0, 4, 39
+"c:\Users\logre\Desktop\FE\src\pages\UserDashboard.jsx", "JavaScript JSX", 0, 31, 0, 0, 0, 6, 37
+"c:\Users\logre\Desktop\FE\src\reportWebVitals.js", "JavaScript", 0, 0, 12, 0, 0, 2, 14
+"c:\Users\logre\Desktop\FE\src\setupTests.js", "JavaScript", 0, 0, 1, 0, 4, 1, 6
+"c:\Users\logre\Desktop\FE\src\web3\abi.js", "JavaScript", 0, 0, 660, 0, 0, 0, 660
+"c:\Users\logre\Desktop\FE\src\web3\address.js", "JavaScript", 0, 0, 1, 0, 0, 0, 1
+"Total", "-", 45, 704, 777, 1, 63, 132, 1722

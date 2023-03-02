@@ -1,5 +1,3 @@
-import React, { useState } from 'react';
-
 function HomePage() {
   const styles = {
     backgroundImage: 'url(https://ngbjimg.xy599.com/11799230786253c33a175222.97426949.jpeg)',
